@@ -13,7 +13,7 @@ const Header = () => {
         <div className="block md:float-left">
           <Link href="/">
             <span className="text-xl font-bold text-white cursor-pointer">
-              GraphCMS
+              RohmatCMS
             </span>
           </Link>
         </div>
