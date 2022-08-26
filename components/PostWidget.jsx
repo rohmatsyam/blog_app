@@ -14,14 +14,14 @@ const PostWidget = ({ categories, slug }) => {
       getRecentPosts().then((result) => setRelatedPosts(result));
     }
   }, [slug]);
-  console.log(relatedPosts);
+  // console.log(relatedPosts);
   return (
     <div className="p-8 mb-8 bg-white rounded-lg shadow-lg">
       <h3 className="pb-4 mb-8 text-lg font-semibold border-b">
         {slug ? "Related Posts" : "Recent Post"}
       </h3>
-      {relatedPosts.map((post) => (
-        <div key={post.tile} className="flex items-center w-full mb-4">
+      {relatedPosts.map((post, index) => (
+        <div key={index} className="flex items-center w-full mb-4">
           <div className="flex-none w-16">
             <img
               src={post.featuredImage.url}
