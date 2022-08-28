@@ -10,3 +10,5 @@ npm i graphql graphql-request html-react-parser npm i moment npm i react-multi-c
 
 Start :
 npm run dev
+
+LIVE = https://nextgraph-rohmat.vercel.app
