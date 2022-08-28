@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import Image from "next/image";
 
 function PostDetail({ post }) {
   const getContentFragment = (index, text, obj, type) => {
@@ -48,6 +49,7 @@ function PostDetail({ post }) {
         return (
           <img
             key={index}
+            layout="fill"
             alt={obj.title}
             height={obj.height}
             width={obj.width}
@@ -70,7 +72,7 @@ function PostDetail({ post }) {
       <div className="px-4 lg:px-0">
         <div className="flex items-center w-full mb-8">
           <div className="flex items-center w-full mb-4 mr-8 lg:mb-0 lg:w-auto">
-            <img
+            <Image
               layout="fixed"
               alt={post.author.name}
               height="30px"
